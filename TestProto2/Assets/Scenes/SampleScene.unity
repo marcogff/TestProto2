@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -263,7 +263,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4d107d5d9bae9964ea5c30317dc0b113, type: 2}
+  - {fileID: 2100000, guid: 5185fe80dae52054b86a852a2a7a458f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -315,10 +315,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 541862116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e78c0e6c17e0e41add043c46e9de87, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a4cd869d4064aa41aa4bc197dada2fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  isSmooth: 0
+  speed: 5
+  speedSmooth: 15
 --- !u!54 &541862122
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -332,9 +334,9 @@ Rigidbody:
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 1
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!1 &585289789
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +371,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!65 &585289791
 BoxCollider:
